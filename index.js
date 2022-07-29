@@ -161,11 +161,11 @@ class Ghost {
 const ghosts = [
     new Ghost({
         position: {
-            x: (6 * Boundary.width + Boundary.width/2),
+            x: (2 * Boundary.width + Boundary.width/2),
             y: (1 * Boundary.height + Boundary.height/2),
         },
         velocity: {
-            x: Ghost.speed,
+            x: -Ghost.speed,
             y: 0,
         },
     }),
@@ -179,6 +179,61 @@ const ghosts = [
             y: 0,
         },
         color: 'ff00ff'
+    }),
+    new Ghost({
+        position: {
+            x: (6 * Boundary.width + Boundary.width/2),
+            y: (10 * Boundary.height + Boundary.height/2),
+        },
+        velocity: {
+            x: 0,
+            y: Ghost.speed,
+        },
+        color: 'fa9b3a'
+    }),
+    new Ghost({
+        position: {
+            x: (17 * Boundary.width + Boundary.width/2),
+            y: (19 * Boundary.height + Boundary.height/2),
+        },
+        velocity: {
+            x: 0,
+            y: -Ghost.speed,
+        },
+        color: '198ba8'
+    }),
+    new Ghost({
+        position: {
+            x: (3 * Boundary.width + Boundary.width/2),
+            y: (17 * Boundary.height + Boundary.height/2),
+        },
+        velocity: {
+            x: Ghost.speed,
+            y: 0,
+        },
+        color: 'baf9a5'
+    }),
+    new Ghost({
+        position: {
+            x: (17 * Boundary.width + Boundary.width/2),
+            y: (5 * Boundary.height + Boundary.height/2),
+        },
+        velocity: {
+            x: -Ghost.speed,
+            y: 0,
+        },
+        color: 'da65f1'
+    }),
+    new Ghost({
+        position: {
+            x: (12 * Boundary.width + Boundary.width/2),
+            y: (15 * Boundary.height + Boundary.height/2),
+        },
+        velocity: {
+            x: Ghost.speed,
+            y: 0,
+        },
+        color: '0fff56'
     })
 ];
 const pellets = [];
@@ -186,8 +241,8 @@ const boundaries = [];
 const powerUps = [];
 const player = new Player({
     position: {
-        x: (Boundary.width + Boundary.width/2),
-        y: (Boundary.height + Boundary.height/2),
+        x: (9 * Boundary.width + Boundary.width/2),
+        y: (3 * Boundary.height + Boundary.height/2),
     },
     velocity: {
         x: 0,
