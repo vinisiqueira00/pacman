@@ -1,0 +1,24 @@
+{
+  "name": "pacman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinisiqueira00/pacman.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinisiqueira00/pacman/issues"
+  },
+  "homepage": "https://vinisiqueira00.github.io/pacman",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
